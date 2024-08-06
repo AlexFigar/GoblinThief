@@ -34,7 +34,10 @@
   },
   "name":"GoblinThief",
   "resources":[
+    {"id":{"name":"ob_player","path":"objects/ob_player/ob_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"sp_player_placeholder","path":"sprites/sp_player_placeholder/sp_player_placeholder.yy",},},
+    {"id":{"name":"sp_wall_placeholder","path":"sprites/sp_wall_placeholder/sp_wall_placeholder.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
