@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"ob_player",
+  "%Name":"ob_ground",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ob_player",
+  "name":"ob_ground",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sp_player_placeholder",
+    "path":"sprites/sp_player_placeholder/sp_player_placeholder.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

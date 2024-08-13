@@ -34,8 +34,9 @@
   },
   "name":"GoblinThief",
   "resources":[
+    {"id":{"name":"ob_ground","path":"objects/ob_ground/ob_ground.yy",},},
     {"id":{"name":"ob_player","path":"objects/ob_player/ob_player.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
     {"id":{"name":"sp_enemy_placeholder","path":"sprites/sp_enemy_placeholder/sp_enemy_placeholder.yy",},},
     {"id":{"name":"sp_goblin_enemy","path":"sprites/sp_goblin_enemy/sp_goblin_enemy.yy",},},
     {"id":{"name":"sp_player_placeholder","path":"sprites/sp_player_placeholder/sp_player_placeholder.yy",},},
@@ -44,7 +45,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
