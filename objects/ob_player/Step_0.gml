@@ -1,39 +1,44 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var x_velocity = 0;
-var y_velocity = 0;
-//var time_step = delta_time / 1000000;
+// Get input 
+kLeft = -keyboard_check(vk_left); 
+kRight = keyboard_check(vk_right); 
+kJump = keyboard_check_pressed(vk_up);
+
+// Use input 
+move = kLeft + kRight; hsp = move * moveSpeed; 
+
+if (vsp < 10) 
+{ 
+	vsp += grav; 
+};
+
+if (place_meeting(x, y + 1, layer_tilemap_get_id("platforms"))) 
+{ 
+	vsp = kJump * -jumpSpeed 
+}
 
 
-	if (keyboard_check(vk_left))
-	{
-	    x_velocity -= movement_speed
-	}
-	
-	if (keyboard_check(vk_right))
-	{
-	    x_velocity += movement_speed 
-	}
-	
-	if (keyboard_check(vk_up))
-	{
-	    y_velocity -= movement_speed 
-	}
-	
-	if (keyboard_check(vk_down))
-	{
-	    y_velocity += movement_speed 
-	}
-	
-	//Sprint key!
-	if(keyboard_check(vk_shift)){
-		x_velocity *= run_speed;
-		y_velocity *= run_speed;
-	}
 
+//H Collisions 
+if (place_meeting(x + hsp, y, layer_tilemap_get_id("platforms")))
+{ 
+	while (!place_meeting(x + sign(hsp), y,  layer_tilemap_get_id("platforms"))) 
+	{ 
+		x += sign(hsp); 
+	} 
+hsp = 0; 
+} 
+x += hsp;
 
-move_and_collide(x_velocity, y_velocity, layer_tilemap_get_id("Walls"))
+//v Collisions 
+if (place_meeting(x, y + vsp, layer_tilemap_get_id("platforms"))) 
+{ 
+	while (!place_meeting(x, y + sign(vsp),  layer_tilemap_get_id("platforms"))) 
+	{ 
+		y += sign(vsp); 
+	} 
+vsp = 0; 
+} y += vsp;
 
-//hspeed = x_velocity
-//vspeed = y_velocity

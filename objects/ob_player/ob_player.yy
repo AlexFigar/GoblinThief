@@ -29,8 +29,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
-  "spriteId":null,
+  "solid":true,
+  "spriteId":{
+    "name":"sp_player_placeholder",
+    "path":"sprites/sp_player_placeholder/sp_player_placeholder.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
