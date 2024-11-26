@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"ob_player",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"ob_key",
+  "eventList":[],
   "managed":true,
-  "name":"ob_player",
+  "name":"ob_key",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -29,11 +26,8 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":{
-    "name":"sp_player_idle",
-    "path":"sprites/sp_player_idle/sp_player_idle.yy",
-  },
+  "solid":false,
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

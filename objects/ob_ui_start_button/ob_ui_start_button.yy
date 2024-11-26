@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"ob_player",
+  "%Name":"ob_ui_start_button",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ob_player",
+  "name":"ob_ui_start_button",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -29,10 +29,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"sp_player_idle",
-    "path":"sprites/sp_player_idle/sp_player_idle.yy",
+    "name":"sp_ui_button",
+    "path":"sprites/sp_ui_button/sp_ui_button.yy",
   },
   "spriteMaskId":null,
   "visible":true,
