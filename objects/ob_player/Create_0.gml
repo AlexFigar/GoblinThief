@@ -3,13 +3,14 @@
 grav = 0.2; 
 hsp = 0; 
 vsp = 0; 
-jumpSpeed = 4; 
-moveSpeed = 2;
+jumpSpeed = 6; 
+moveSpeed = 3;
 
 keyboard_jump = false;
 keyboard_right = 0;
 keyboard_left = 0;
 y_velocity = 0;
+attack = false;
 
 
 //Court mandated array to pass the course

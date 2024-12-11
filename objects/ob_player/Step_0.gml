@@ -5,14 +5,17 @@
 keyboard_left = -keyboard_check(vk_left); 
 keyboard_right = keyboard_check(vk_right); 
 keyboard_jump = keyboard_check_pressed(vk_up);
+attack = mouse_check_button(mb_left)
+
+
 
 // Use input 
-var move = keyboard_left + keyboard_right; hsp = move * moveSpeed; 
+var move = keyboard_left + keyboard_right; hsp = move * moveSpeed;
 
-
+//helpful functions
 function TestVerticalCollision(){
 	
-	if(place_meeting(x, y + vsp, layer_tilemap_get_id("platforms"))){
+	if(place_meeting(x, y + vsp, ob_collider)){
 		return true;
 	}
 	return false;
@@ -20,10 +23,35 @@ function TestVerticalCollision(){
 
 function TestHorizontalCollision(){
 	
-	if (place_meeting(x + hsp, y, layer_tilemap_get_id("platforms"))) {
+	if (place_meeting(x + hsp, y, ob_collider)) {
 		return true;
 	}
 	return false;
+}
+
+//Sprite bs
+if(hsp != 0){
+	sprite_index = sp_player_run
+	if (sign(hsp)){
+		image_xscale = 1
+	}else{
+		image_xscale = -1
+	}
+}else{
+	sprite_index = sp_player_idle
+}
+
+if(!place_meeting(x, y + 0.5, ob_collider)){
+	
+	if(sign(vsp)){
+	sprite_index = sp_player_jump
+	image_index = clamp(image_index, 2, 4)
+
+	}else{
+	sprite_index = sp_player_jump
+	image_index = clamp(image_index, 0, 2)
+	}
+
 }
 
 
@@ -32,7 +60,7 @@ if (vsp < 10)
 	vsp += grav; 
 };
 
-if (place_meeting(x, y + 1, layer_tilemap_get_id("platforms"))) 
+if (place_meeting(x, y + 0.5, ob_collider)) 
 { 
 	vsp = keyboard_jump * -jumpSpeed 
 }
@@ -42,7 +70,7 @@ if (place_meeting(x, y + 1, layer_tilemap_get_id("platforms")))
 //H Collisions 
 if (TestHorizontalCollision())
 { 
-	while (!place_meeting(x + sign(hsp), y,  layer_tilemap_get_id("platforms"))) 
+	while (!place_meeting(x + sign(hsp), y,  ob_collider)) 
 	{ 
 		x += sign(hsp); 
 	} 
@@ -53,9 +81,12 @@ x += hsp;
 //v Collisions 
 if (TestVerticalCollision()) 
 { 
-	while (!place_meeting(x, y + sign(vsp),  layer_tilemap_get_id("platforms"))) 
+	while (!place_meeting(x, y + sign(vsp),  ob_collider)) 
 	{ 
 		y += sign(vsp); 
-	} 
-vsp = 0; 
-} y += vsp;
+	}
+vsp = 0;
+} 
+y += vsp;
+
+

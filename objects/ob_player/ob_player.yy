@@ -24,7 +24,12 @@
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
-  "physicsShapePoints":[],
+  "physicsShapePoints":[
+    {"x":16.0,"y":5.0,},
+    {"x":48.0,"y":5.0,},
+    {"x":48.0,"y":64.0,},
+    {"x":16.0,"y":64.0,},
+  ],
   "physicsStartAwake":true,
   "properties":[],
   "resourceType":"GMObject",
