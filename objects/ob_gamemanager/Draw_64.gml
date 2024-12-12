@@ -6,3 +6,10 @@ if can_fade == 1 {
     draw_rectangle(0,0,5000,5000,false);
     draw_set_alpha(1);
 }
+
+if can_fade_white == 1 {
+    draw_set_alpha(fade_timer_white/fade_timer_max_white);
+    draw_set_color(c_white);
+    draw_rectangle(0,0,5000,5000,false);
+    draw_set_alpha(1);
+}

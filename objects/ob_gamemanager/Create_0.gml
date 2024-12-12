@@ -4,6 +4,10 @@ can_fade = 0;
 fade_timer = 0;
 fade_timer_max = room_speed * 3;
 
+can_fade_white = 0;
+fade_timer_white = 0;
+fade_timer_max_white = room_speed * 3;
+
 
 door_open = false;
 

@@ -60,6 +60,7 @@
     {"id":{"name":"sp_collision","path":"sprites/sp_collision/sp_collision.yy",},},
     {"id":{"name":"sp_cursor","path":"sprites/sp_cursor/sp_cursor.yy",},},
     {"id":{"name":"sp_DualGrid","path":"sprites/sp_DualGrid/sp_DualGrid.yy",},},
+    {"id":{"name":"sp_en","path":"sprites/sp_en/sp_en.yy",},},
     {"id":{"name":"sp_floor_placeholder","path":"sprites/sp_floor_placeholder/sp_floor_placeholder.yy",},},
     {"id":{"name":"sp_flowers","path":"sprites/sp_flowers/sp_flowers.yy",},},
     {"id":{"name":"sp_goblin_atack","path":"sprites/sp_goblin_atack/sp_goblin_atack.yy",},},

@@ -15,6 +15,7 @@ attack = false;
 hearts = 2
 strength = 1
 invuln = 0
+can_move = true
 
 
 //Court mandated array to pass the course

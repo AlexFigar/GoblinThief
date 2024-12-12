@@ -6,7 +6,7 @@
 	 invuln -= (delta_time/1000)
 	}
 
-
+if can_move{
 //prioritise wasd
 if(keyboard_check(ord("A")) || keyboard_check(vk_left)){
 keyboard_left = -1
@@ -27,7 +27,7 @@ keyboard_jump = 1
 }
 
 attack = mouse_check_button(mb_left)
-
+}
 
 
 // Use input 
