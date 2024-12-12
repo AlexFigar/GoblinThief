@@ -5,9 +5,10 @@
     {"$GMAutoTileSet":"","%Name":"AutoTileTest","closed_edge":true,"name":"AutoTileTest","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[12,15,8,9,6,11,14,7,10,4,1,10,3,2,5,0,],},
   ],
   "macroPageTiles":{
-    "SerialiseHeight":0,
-    "SerialiseWidth":0,
-    "TileSerialiseData":[],
+    "SerialiseHeight":5,
+    "SerialiseWidth":6,
+    "TileCompressedData":[-19,0,1,7,-3,9,3,10,0,2,-3,3,1,5,],
+    "TileDataFormat":1,
   },
   "name":"TileSet1",
   "out_columns":4,

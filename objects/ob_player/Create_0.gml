@@ -17,4 +17,4 @@ strength = 1
 
 
 //Court mandated array to pass the course
-player_inventory = [0, 0, 0, 0, 0, 0, 0];
+player_sprites = [sp_player_idle, sp_player_run, sp_player_jump, sp_player_attack];

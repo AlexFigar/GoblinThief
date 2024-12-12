@@ -2,24 +2,27 @@
   "$GMSprite":"",
   "%Name":"sp_goblin_death",
   "bboxMode":0,
-  "bbox_bottom":100,
-  "bbox_left":57,
-  "bbox_right":558,
-  "bbox_top":62,
+  "bbox_bottom":63,
+  "bbox_left":14,
+  "bbox_right":63,
+  "bbox_top":26,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e1aff593-7c29-4752-8373-6b9f171fcb5d","name":"e1aff593-7c29-4752-8373-6b9f171fcb5d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"94a8a6b4-27c2-4a19-8278-6dfcc0cd5c99","name":"94a8a6b4-27c2-4a19-8278-6dfcc0cd5c99","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"78522456-ca68-4433-bbc4-f03df8a654b8","name":"78522456-ca68-4433-bbc4-f03df8a654b8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"8b94c197-a7d1-4816-a413-e0bb4cfc1960","name":"8b94c197-a7d1-4816-a413-e0bb4cfc1960","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"24b52ad6-61f3-4cb7-a3b3-49f79156a873","name":"24b52ad6-61f3-4cb7-a3b3-49f79156a873","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":150,
+  "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"ce2ada0f-a84a-4695-b2f4-433d0e0c0904","blendMode":0,"displayName":"default","isLocked":false,"name":"ce2ada0f-a84a-4695-b2f4-433d0e0c0904","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d9087f04-3bcb-436f-a558-55694fc6e0a3","blendMode":0,"displayName":"default","isLocked":false,"name":"d9087f04-3bcb-436f-a558-55694fc6e0a3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sp_goblin_death",
   "nineSlice":null,
@@ -49,7 +52,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":4.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -69,8 +72,17 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e1aff593-7c29-4752-8373-6b9f171fcb5d","path":"sprites/sp_goblin_death/sp_goblin_death.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"604357ff-afe9-4569-8dc1-cd42db7451c8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"94a8a6b4-27c2-4a19-8278-6dfcc0cd5c99","path":"sprites/sp_goblin_death/sp_goblin_death.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"353f38c9-2ede-4eba-b151-aca37a85cdca","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"78522456-ca68-4433-bbc4-f03df8a654b8","path":"sprites/sp_goblin_death/sp_goblin_death.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"263123e0-856d-494b-a350-7c652007164d","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8b94c197-a7d1-4816-a413-e0bb4cfc1960","path":"sprites/sp_goblin_death/sp_goblin_death.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"824fea3d-9be0-4f3e-9a4e-9782019dd827","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"24b52ad6-61f3-4cb7-a3b3-49f79156a873","path":"sprites/sp_goblin_death/sp_goblin_death.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"26bd4359-d693-4cd5-ac3d-274b2c2581a9","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +98,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":600,
+  "width":64,
 }

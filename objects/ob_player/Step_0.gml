@@ -6,12 +6,19 @@ keyboard_left = -keyboard_check(vk_left);
 keyboard_right = keyboard_check(vk_right); 
 keyboard_jump = keyboard_check_pressed(vk_up);
 
-if(keyboard_check(keyboard_check(ord("a")))){
+//prioritise wasd
+if(keyboard_check(ord("A"))){
 keyboard_left = -1
 }
 
-if(keyboard_check(keyboard_check(ord("d")))){
+if(keyboard_check(ord("D"))){
 keyboard_right = 1
+}
+
+if(keyboard_check(ord("W")) || keyboard_check(vk_space)){
+keyboard_jump = 1
+}else{
+	keyboard_jump = 0
 }
 
 attack = mouse_check_button(mb_left)
@@ -40,14 +47,14 @@ function TestHorizontalCollision(){
 
 //Sprite bs
 if(hsp != 0){
-	sprite_index = sp_player_run
+	sprite_index = player_sprites[1]
 	if (sign(hsp)){
 		image_xscale = 1
 	}else{
 		image_xscale = -1
 	}
 }else{
-	sprite_index = sp_player_idle
+	sprite_index = player_sprites[0]
 }
 
 
@@ -55,17 +62,16 @@ if(hsp != 0){
 if(!place_meeting(x, y + 0.5, ob_collider)){
 	
 	if(sign(vsp)){
-	sprite_index = sp_player_jump
+	sprite_index =  player_sprites[2]
 	image_index = clamp(image_index, 2, 4)
 
 	}else{
-	sprite_index = sp_player_jump
+	sprite_index = player_sprites[2]
 	image_index = clamp(image_index, 0, 2)
 	}
 
 }else if(attack){
-	sprite_index = sp_player_attack
-	image_index++
+	sprite_index = player_sprites[3]
 	image_speed = 1
 	hsp = 0;
 }

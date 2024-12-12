@@ -15,3 +15,10 @@ if can_fade == 1 {
         room_restart();
     }
 }
+
+
+if(!instance_exists(ob_goblin)){
+	
+	//Open door
+	
+}
