@@ -1,21 +1,26 @@
 /// @description Insert description here
 // You can write your code in this editor
+	image_speed = 1
+	if invuln > 0
+	{
+	 invuln -= (delta_time/1000)
+	}
 
-// Get input 
-keyboard_left = -keyboard_check(vk_left);
-keyboard_right = keyboard_check(vk_right); 
-keyboard_jump = keyboard_check_pressed(vk_up);
 
 //prioritise wasd
-if(keyboard_check(ord("A"))){
+if(keyboard_check(ord("A")) || keyboard_check(vk_left)){
 keyboard_left = -1
+}else{
+	keyboard_left = 0
 }
 
-if(keyboard_check(ord("D"))){
+if(keyboard_check(ord("D"))|| keyboard_check(vk_right)){
 keyboard_right = 1
+}else{
+keyboard_right = 0
 }
 
-if(keyboard_check(ord("W")) || keyboard_check(vk_space)){
+if(keyboard_check(ord("W")) || keyboard_check(vk_space) || keyboard_check_pressed(vk_up)){
 keyboard_jump = 1
 }else{
 	keyboard_jump = 0
@@ -72,7 +77,10 @@ if(!place_meeting(x, y + 0.5, ob_collider)){
 
 }else if(attack){
 	sprite_index = player_sprites[3]
-	image_speed = 1
+	if(!audio_is_playing(sword_swoosh)){ 
+		audio_play_sound(sword_swoosh,2,false)
+	}
+
 	hsp = 0;
 }
 

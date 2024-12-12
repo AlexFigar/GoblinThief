@@ -14,7 +14,9 @@ attack = false;
 
 hearts = 2
 strength = 1
+invuln = 0
 
 
 //Court mandated array to pass the course
 player_sprites = [sp_player_idle, sp_player_run, sp_player_jump, sp_player_attack];
+player_items = [0,0,0,0]

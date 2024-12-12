@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
-  "%Name":"sp_lock",
+  "%Name":"sp_locked_door",
   "bboxMode":0,
   "bbox_bottom":63,
-  "bbox_left":19,
-  "bbox_right":31,
+  "bbox_left":52,
+  "bbox_right":63,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -21,9 +21,9 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"c5ba0cd2-2dc8-4daf-ae98-c2fb75478e48","blendMode":0,"displayName":"default","isLocked":false,"name":"c5ba0cd2-2dc8-4daf-ae98-c2fb75478e48","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sp_lock",
+  "name":"sp_locked_door",
   "nineSlice":null,
-  "origin":0,
+  "origin":8,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"sp_lock",
+    "%Name":"sp_locked_door",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sp_lock",
+    "name":"sp_locked_door",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,14 +69,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fac4b963-4f16-4dd0-888c-f4fbe64cd257","path":"sprites/sp_lock/sp_lock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fac4b963-4f16-4dd0-888c-f4fbe64cd257","path":"sprites/sp_locked_door/sp_locked_door.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a54438fd-a515-4bef-93ec-d0e41e02afcc","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":64,
+    "yorigin":64,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

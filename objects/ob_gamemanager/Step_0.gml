@@ -16,9 +16,15 @@ if can_fade == 1 {
     }
 }
 
-
-if(!instance_exists(ob_goblin)){
+// checking every frame is bad i know but also it 
+//just feels wrong to have it on the player or goblin object
+if(!instance_exists(ob_goblin)){ 
 	
 	//Open door
+	if(!door_open){
+	door_open = true
+	audio_play_sound(unlock,2,false);
+	ob_door.locked = false;
 	
+	}
 }

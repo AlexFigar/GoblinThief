@@ -1,13 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 if attack {
-instance_destroy(other)
-}else{
-	hearts--
+	if image_index >= 2 {
+		instance_destroy(other)
 }
-
-
-if(){
-
-
+}else if invuln <= 0{
+	hearts--
+	invuln = 500;
+	
 }
