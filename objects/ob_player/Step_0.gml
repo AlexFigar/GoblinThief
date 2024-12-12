@@ -2,9 +2,18 @@
 // You can write your code in this editor
 
 // Get input 
-keyboard_left = -keyboard_check(vk_left); 
+keyboard_left = -keyboard_check(vk_left);
 keyboard_right = keyboard_check(vk_right); 
 keyboard_jump = keyboard_check_pressed(vk_up);
+
+if(keyboard_check(keyboard_check(ord("a")))){
+keyboard_left = -1
+}
+
+if(keyboard_check(keyboard_check(ord("d")))){
+keyboard_right = 1
+}
+
 attack = mouse_check_button(mb_left)
 
 
@@ -41,6 +50,8 @@ if(hsp != 0){
 	sprite_index = sp_player_idle
 }
 
+
+
 if(!place_meeting(x, y + 0.5, ob_collider)){
 	
 	if(sign(vsp)){
@@ -52,8 +63,14 @@ if(!place_meeting(x, y + 0.5, ob_collider)){
 	image_index = clamp(image_index, 0, 2)
 	}
 
+}else if(attack){
+	sprite_index = sp_player_attack
+	image_index++
+	image_speed = 1
+	hsp = 0;
 }
 
+//end of sprite bs
 
 if (vsp < 10) 
 { 
@@ -81,7 +98,7 @@ x += hsp;
 //v Collisions 
 if (TestVerticalCollision()) 
 { 
-	while (!place_meeting(x, y + sign(vsp),  ob_collider)) 
+	while (!place_meeting(x, y + sign(vsp),  ob_collider) || hearts == 0) 
 	{ 
 		y += sign(vsp); 
 	}

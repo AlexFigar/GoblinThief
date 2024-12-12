@@ -12,6 +12,9 @@ keyboard_left = 0;
 y_velocity = 0;
 attack = false;
 
+hearts = 2
+strength = 1
+
 
 //Court mandated array to pass the course
 player_inventory = [0, 0, 0, 0, 0, 0, 0];
